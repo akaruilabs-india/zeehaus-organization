@@ -1,6 +1,6 @@
 {
   "name": "zeehaus-organization",
-  "homepage": "https://akaruilabs-india.github.io/zeehaus-organization",
+  "homepage": "https://zeehaus.org",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "react-scripts build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d build -f"
   },
   "eslintConfig": {
     "extends": [
