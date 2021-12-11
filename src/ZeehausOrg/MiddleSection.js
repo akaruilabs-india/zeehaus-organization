@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from "react";
 import { Col, Grid, Row } from 'react-flexbox-grid'
+import PopupPage from './PopupPage';
 
 export default function MiddleSection () {
+    const [popupOpen, setPopupOpen] = useState(false);
     return (
       <div>
         <Grid>
@@ -20,7 +22,7 @@ export default function MiddleSection () {
                   sm={12}
                   md={6}
                   lg={6}
-                  style={{ padding: 0, paddingTop: '2rem' }}
+                  style={{ padding: 0, paddingTop: "2rem" }}
                 >
                   <div className="org-card">
                     <div>
@@ -38,7 +40,7 @@ export default function MiddleSection () {
                   sm={12}
                   md={6}
                   lg={6}
-                  style={{ padding: 0, paddingTop: '2rem' }}
+                  style={{ padding: 0, paddingTop: "2rem" }}
                 >
                   <div className="org-card">
                     <div>
@@ -57,14 +59,20 @@ export default function MiddleSection () {
                   sm={12}
                   md={6}
                   lg={6}
-                  style={{ padding: 0, paddingTop: '2rem' }}
+                  style={{ padding: 0, paddingTop: "2rem" }}
                 >
                   <div className="org-card">
                     <div>
                       <h1>Economically Sustainable</h1>
                       <p>
-                        Equity sharing & funding from token sales means no
-                        subsidy needed from homebuilder or government.
+                        <span
+                          className="link"
+                          onClick={() => setPopupOpen(true)}
+                        >
+                          Equity sharing
+                        </span>{" "}
+                        & funding from token sales means no subsidy needed from
+                        homebuilder or government.
                       </p>
                     </div>
                     <img src="https://images.pexels.com/photos/7172858/pexels-photo-7172858.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
@@ -75,7 +83,7 @@ export default function MiddleSection () {
                   sm={12}
                   md={6}
                   lg={6}
-                  style={{ padding: 0, paddingTop: '2rem' }}
+                  style={{ padding: 0, paddingTop: "2rem" }}
                 >
                   <div className="org-card">
                     <div>
@@ -100,6 +108,28 @@ export default function MiddleSection () {
             </Col> */}
           </Row>
         </Grid>
+        <PopupPage open={popupOpen} toggle={() => setPopupOpen(false)}>
+          <p>
+            Zeehaus is a web platform, and one of its main programs is designed
+            to pair homebuyers who do not want a mortgage with Investors hoping
+            to profit from home future appreciation. This type of arrangement is
+            called equity sharing. In addition to providing a platform for the
+            initial pairing and funding, Zeehaus provides the organizational
+            structure and legal documentation for the relationships between
+            homebuyers and Investors, and manages these relationships throughout
+            the equity share.
+          </p>
+          <p>
+            Zeehaus does not “manage” any property. Instead, it manages the
+            relationship between investors and property owners and provides
+            investors with the technology and digital platform to simplify the
+            ownership and investment experiences, while ensuring the correct
+            processes are followed, legal documentation is filed, and ownership
+            structure is enforced. Thus, it enables buying small fractions of
+            property possible with multiple investors / co-owners, without
+            managing the property itself.{" "}
+          </p>
+        </PopupPage>
       </div>
-    )
+    );
 }

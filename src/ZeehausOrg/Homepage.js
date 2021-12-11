@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Footer from './Footer'
 import MiddleSection from './MiddleSection'
 import Nav from './Nav'
 import SectionOne from './SectionOne'
@@ -16,6 +17,7 @@ export default class Homepage extends Component {
                 <MiddleSection />
                 <CoinVideo />
                 <ThirdSection />
+                <Footer />
             </div>
         )
     }

@@ -15,6 +15,67 @@
 h3 {
   font-weight: normal;
 }
+.c-footer {
+  padding: 1.4rem 0;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: white;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem;
+  width: 100% !important;
+}
+
+.c-footer .new-header-v2 {
+  font-weight: 400 !important;
+  margin-top: 0;
+}
+
+.c-footer-icon * {
+  fill: #0051a2;
+  font-size: 3rem;
+  color: #0051a2;
+}
+
+.c-footer .btn-accent {
+}
+
+.c-footer > div > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.c-footer-icon {
+  width: 20%;
+}
+
+.c-footer-icon > * {
+  padding: 10px;
+  border-radius: 50px;
+  width: 60px;
+  color: #0051a2;
+  height: 60px;
+  background-color: #0051a211;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 1.5rem !important;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.c-footer-data {
+  width: 80%;
+  padding-left: 1rem;
+}
+
+.c-footer-data * {
+  letter-spacing: 0px !important;
+  font-size: 14px !important;
+}
 
 .zeetabs-content-containers {
   padding: 1rem 0;
@@ -287,11 +348,11 @@ h3 {
 }
 .zee-tabs-v5 .zeetabs-button-container .tab-button.active {
   border-bottom: 3px solid #284e75;
-  font-weight: bold;
-  color: #5a7794;
-  box-shadow: none;
-  letter-spacing: 5px;
-  text-transform: uppercase;
+    font-weight: bold;
+    color: #5a7794;
+    box-shadow: none;
+    letter-spacing: 5px;
+    white-space: nowrap;
 }
 .zee-tabs-v5 .tab-button {
   border-bottom: 3px solid transparent;
@@ -399,9 +460,9 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -444,7 +505,138 @@ h3 {
   margin-top: 4px;
   margin-right: 10px;
 }
+.react-simple-expander > div:last-child {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  height: 0px;
+  animation: expand 0.2s ease-out 1s 1;
+}
+@keyframes expand {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0px;
+  }
+}
+.react-simple-expander-expanded > div:last-child {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+  height: 100%;
+}
+
+.react-simple-expander .expander-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  z-index: 1;
+  position: relative;
+}
+.react-simple-expander .expander-header:last-child {
+  border-bottom: none;
+}
+
+.react-simple-expander .expander-header > span:first-child {
+  color: #284e75;
+  font-size: 1.5rem;
+}
+
+.react-simple-expander .expander-header > span:last-child {
+  font-size: 1.5rem;
+  color: #aaa;
+  width: 30px;
+  display: flex;
+  font-weight: lighter;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+.react-simple-expander-expanded .expander-header > span:last-child {
+  transform: rotate(0deg);
+}
+
+.footer {
+  padding-top: 4rem;
+  padding: 4rem 1rem 0 1rem;
+  box-sizing: border-box;
+}
+
+.footerLinks a {
+  cursor: pointer;
+  color: #4e6378 !important;
+  white-space: normal;
+  line-height: 1.5;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 0 !important;
+}
+
+.footer h3 {
+  font-weight: normal !important;
+  font-size: 1rem !important;
+  font-family: 'SofiaPro-Bold';
+}
+
+.footerLinks ul li {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.2rem;
+  color: #284e75;
+}
+
+.social-icons a {
+  margin-top: 15px !important;
+  transition: all 0.2s ease;
+  color: #4e6378 !important;
+}
+
+.social-icons a:hover {
+  color: #0051a2 !important;
+}
+
+.social-icons a:first-child {
+  margin-left: 0 !important;
+}
+
+
 @media only screen and (max-width: 600px) {
+  .org-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem 0;
+    justify-content: space-around;
+  }
+  .org-section h1 {
+    font-size: 1.4rem !important;
+  }
+  .org-card h1, .org-card-vert h1 {
+    font-size: 1rem !important;
+  }
+  .org-section {
+    padding: 2rem 10px;
+  }
+  .org-section .text {
+    padding: 0;
+  }
   .zeetabs-content-containers {
   }
   .zeetabs-button-container {
@@ -465,8 +657,94 @@ h3 {
     max-width: 100%;
   }
 }
+.react-simple-expander > div:last-child {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  height: 0px;
+  animation: expand 0.2s ease-out 1s 1;
+}
+@keyframes expand {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0px;
+  }
+}
+.react-simple-expander-expanded > div:last-child {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+  height: 100%;
+}
+
+.react-simple-expander .expander-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  z-index: 1;
+  position: relative;
+}
+.react-simple-expander .expander-header:last-child {
+  border-bottom: none;
+}
+
+.react-simple-expander .expander-header > span:first-child {
+  color: #284e75;
+  font-size: 1.5rem;
+}
+
+.react-simple-expander .expander-header > span:last-child {
+  font-size: 1.5rem;
+  color: #aaa;
+  width: 30px;
+  display: flex;
+  font-weight: lighter;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+.react-simple-expander-expanded .expander-header > span:last-child {
+  transform: rotate(0deg);
+}
+
+.extra-content {
+  padding-left: 1rem;
+}
+
+.extra-content-open {
+  display: flex;
+}
+div.zeehaus-card.card-light {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  box-shadow: none;
+}
+div.zeehaus-card div.card-light {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.extra-content-open-btn {
+}
+
+.extra-content-close-btn {
+}
+.extra-content-open .org-card-vert div{
+  padding: 0;
+}
 
 @media only screen and (max-width: 500px) {
+  .logo-extra-big {
+    justify-content: center;
+  }
   .zee-tabs-v2 .zeetabs-button-container {
     padding: 0 0;
   }
@@ -474,7 +752,22 @@ h3 {
     overflow-x: auto;
     padding: 0 1rem;
     padding-left: 5px;
+    max-width: 100%;
     padding-top: 10px !important;
+    justify-content: flex-start;
+    display: flex;
+
+  }
+  .zee-tabs-v5 .tab-button {
+    border-bottom: 3px solid transparent;
+    font-weight: bold;
+    color: #5a7794;
+    box-shadow: none;
+    background: transparent;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: inline-block;
   }
   .zeetabs-content.active {
   }
@@ -482,5 +775,20 @@ h3 {
   }
   .radio-group > div {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .c-footer-icon > * {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem !important;
+    margin-right: 15px;
+  }
+  .c-footer .btn-accent {
+    font-size: 12px !important;
+  }
+  .c-footer-icon {
+    font-size: 1.7rem !important;
   }
 }

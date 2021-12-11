@@ -15,7 +15,7 @@ export default class Nav extends Component {
             <a href="https://zeehaus.com/coin">Zeehaus Coin</a>
           </div>
           <div className="org-nav-element">
-            <a href="">Blockchain</a>
+            <a href="#">Blockchain</a>
             <div>
               <a href="https://zeehaus.com/risk_and_protection#blockchain">
                 Property & Protection
@@ -30,13 +30,13 @@ export default class Nav extends Component {
             <a href="https://zeehaus.com/about_us">About Zeehaus</a>
           </div>
           <div className="org-nav-element">
-            <a href="https://zeehaus.com/sign_up/community">FAQ</a>
+            <a href="https://zeehaus.com/faq">FAQ</a>
           </div>
           <div className="org-nav-element">
             <a href="https://zeehaus.com/submit_inquiry#coin">Contact Us</a>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

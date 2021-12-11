@@ -86,7 +86,7 @@ class Tabs extends Component {
   }
   render() {
     let children = this.props.children;
-    const { noTopMar, v2, v3, start, grid, v5 } = this.props;
+    const { noTopMar, v2, v3, start, grid, v5, style } = this.props;
     if (children && !children.length) children = [children];
     let icons = [];
     let exploded = [];
@@ -131,7 +131,16 @@ class Tabs extends Component {
           >
             {exploded[i]}
           </div>
-        ) : null
+        ) : (
+          <div
+            key={i}
+            className={
+              "zeetabs-content"
+            }
+          >
+            {exploded[i]}
+          </div>
+        )
       );
     }
     let showLeftScrollButton = (v2 || v3) && showLeft,
@@ -144,6 +153,7 @@ class Tabs extends Component {
           (v3 ? "zee-tabs-v2 zee-tabs-v3" : "") +
           (v5 ? "zee-tabs-v5" : "")
         }
+        style={style}
       >
         <div className={grid ? "container" : ""}>
           <div className={v2 || v3 ? "hide-scrollbar" : ""}>
