@@ -47,7 +47,7 @@ const styles = {
   footerHeads: {
     fontSize: "22px",
     color: Colors.blue,
-    textAlign: "left",
+    textAlign: isMobile ? 'center' : "left",
   },
   footerSubHeads: {
     color: "#284e75",
@@ -354,7 +354,6 @@ export default class Footer extends React.Component {
                       <Col
                         md={4}
                         xs={12}
-                        style={{ display: !isMobile ? "block" : "none" }}
                       >
                         <h3 style={styles.footerHeads}>Services</h3>
                         <div
@@ -430,7 +429,6 @@ export default class Footer extends React.Component {
                       <Col
                         md={4}
                         xs={12}
-                        style={{ display: !isMobile ? "block" : "none" }}
                       >
                         <h3 style={styles.footerHeads}>Learn</h3>
                         <div
@@ -506,7 +504,6 @@ export default class Footer extends React.Component {
                       <Col
                         md={4}
                         xs={12}
-                        style={{ display: !isMobile ? "block" : "none" }}
                       >
                         <h3 style={styles.footerHeads}>Reference</h3>
                         <div

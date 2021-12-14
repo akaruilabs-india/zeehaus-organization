@@ -11,6 +11,7 @@
 * {
   font-family: "SofiaPro-Medium", sans-serif;
   color: #5a7794;
+  box-sizing: border-box;
 }
 h3 {
   font-weight: normal;
@@ -348,11 +349,11 @@ h3 {
 }
 .zee-tabs-v5 .zeetabs-button-container .tab-button.active {
   border-bottom: 3px solid #284e75;
-    font-weight: bold;
-    color: #5a7794;
-    box-shadow: none;
-    letter-spacing: 5px;
-    white-space: nowrap;
+  font-weight: bold;
+  color: #5a7794;
+  box-shadow: none;
+  letter-spacing: 5px;
+  white-space: nowrap;
 }
 .zee-tabs-v5 .tab-button {
   border-bottom: 3px solid transparent;
@@ -590,7 +591,7 @@ h3 {
 .footer h3 {
   font-weight: normal !important;
   font-size: 1rem !important;
-  font-family: 'SofiaPro-Bold';
+  font-family: "SofiaPro-Bold";
 }
 
 .footerLinks ul li {
@@ -614,9 +615,48 @@ h3 {
 .social-icons a:first-child {
   margin-left: 0 !important;
 }
-
+.menu-drawer {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 6rem;
+  background-color: white;
+  padding: 5rem 3rem;
+  transform: translateX(150%);
+  transition: all 0.3s ease;
+}
+.menu-drawer .close {
+ position: absolute;
+    right: 1rem;
+    font-size: 1.3rem;
+    opacity: 0.3;
+    top: 1rem;
+}
+.drawer-open {
+  transform: translateX(0%);
+}
 
 @media only screen and (max-width: 600px) {
+  .footerLinks ul li  {
+    text-align: center;
+  }
+  .org-section {
+    padding: 2rem 1rem;
+  }
+  .org-nav-bottom {
+    display:flex;
+    flex-direction: column;
+  }
+  .org-nav-bottom  .org-nav-element {
+    margin: 1rem 0;
+  }
   .org-nav {
     display: flex;
     justify-content: center;
@@ -626,10 +666,16 @@ h3 {
     justify-content: space-around;
   }
   .org-section h1 {
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
+    letter-spacing: 7px !important;
   }
-  .org-card h1, .org-card-vert h1 {
+  .org-card h1,
+  .org-card-vert h1 {
     font-size: 1rem !important;
+    letter-spacing: 6px !important;
+  }
+  .org-card {
+    padding-left: 1rem;
   }
   .org-section {
     padding: 2rem 10px;
@@ -737,7 +783,7 @@ div.zeehaus-card div.card-light {
 
 .extra-content-close-btn {
 }
-.extra-content-open .org-card-vert div{
+.extra-content-open .org-card-vert div {
   padding: 0;
 }
 
@@ -756,7 +802,6 @@ div.zeehaus-card div.card-light {
     padding-top: 10px !important;
     justify-content: flex-start;
     display: flex;
-
   }
   .zee-tabs-v5 .tab-button {
     border-bottom: 3px solid transparent;

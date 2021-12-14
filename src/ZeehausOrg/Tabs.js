@@ -135,10 +135,10 @@ class Tabs extends Component {
           <div
             key={i}
             className={
-              "zeetabs-content"
+              activeTab === i ? "zeetabs-content active" : "zeetabs-content"
             }
           >
-            {exploded[i]}
+            
           </div>
         )
       );

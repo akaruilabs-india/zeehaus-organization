@@ -9,7 +9,7 @@
 }
 .org-nav-top img {
   width: 120px;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 .org-nav-bottom {
   display: flex;
@@ -43,6 +43,7 @@
 .org-nav-element:hover div {
   display: flex;
   background-color: white;
+  z-index: 1;
 }
 .org-nav-element:hover div::after {
   position: absolute;
@@ -87,8 +88,11 @@
   line-height: 1.5;
   color: #284e75;
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
   margin-top: 1rem;
+}
+.center {
+  text-align: center !important;
 }
 .org-section h2 {
   color: #284e75;
@@ -326,6 +330,16 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .org-section-img {
+    height: 100vmin !important;
+  }
+  .org-nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+  }
   .popup-dialog:after {
     background: none;
   }

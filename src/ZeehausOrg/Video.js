@@ -13,15 +13,21 @@ export default function CoinVideo () {
                   sm={12}
                   md={8}
                   lg={6}
-                  style={{ padding: 0, paddingTop: '2rem' }}
+                  style={{ padding: 0, paddingTop: "2rem" }}
                 >
-                  <h1>Video</h1>
+                  <h1 className="center">Video</h1>
                   <h3>
                     Watch a quick introductory video to learn more about Zeehaus
                     Coins.
                   </h3>
                   <span className="gray-line" />
-                  <div style={{background: '#f8f8f8', padding: '2rem', borderRadius: 20}}>
+                  <div
+                    style={{
+                      background: "#f8f8f8",
+                      padding: "2rem",
+                      borderRadius: 20,
+                    }}
+                  >
                     <iframe
                       width="100%"
                       height={400}
@@ -44,5 +50,5 @@ export default function CoinVideo () {
           </Row>
         </Grid>
       </div>
-    )
+    );
 }

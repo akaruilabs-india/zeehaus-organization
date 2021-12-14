@@ -9,7 +9,9 @@ export default function MiddleSection () {
         <Grid>
           <Row className="org-section" middle="xs" center="xs">
             <Col xs={12} className="text">
-              <h1>Equity Sharing, Zeehaus Coins, and Blockchain</h1>
+              <h1 className="center">
+                Equity Sharing, Zeehaus Coins, and Blockchain
+              </h1>
               <h3>
                 Real estate is ready for disruption. We have a unique approach
                 to deal with our housing crisis.

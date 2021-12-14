@@ -23,7 +23,7 @@ export default function ThirdSection () {
             <Tabs v5 style={{ width: "100%" }}>
               <Tab label="Nonprofit">
                 <Col xs={12} className="text">
-                  <h1>Help Achieve Homeownership</h1>
+                  <h1 className="center">Help Achieve Homeownership</h1>
                   <h3>
                     We are a new real estate ecosystem, leveraging the{" "}
                     <span className="link" onClick={() => setPopupOpen(true)}>
@@ -259,7 +259,7 @@ export default function ThirdSection () {
                 <iframe
                   title="Understand Zeehaus Coins"
                   frameBorder="0"
-                  height="3900"
+                  height="1800"
                   width="100%"
                   onLoad={() => setIframeLoaded(true)}
                   scrolling="no"
@@ -268,7 +268,7 @@ export default function ThirdSection () {
               </Tab>
               <Tab label="How to Buy HAUS Coins">
                 <br />
-                <h1>How to Buy HAUS Coins</h1>
+                <h1 className="center">How to Buy HAUS Coins</h1>
                 <br />
                 <span className="gray-line" />
                 <br />
