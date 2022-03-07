@@ -1,16 +1,16 @@
 import React, { Component, useState } from 'react'
 import './style.css'
+import logo from "./../Icon&Text(Foundation).png";
 import MobileDetect from "mobile-detect";
 const md = new MobileDetect(window.navigator.userAgent);
 const isMobile = md.mobile();
-
 export default function Nav () {
     const [open, setOpen] = useState(false)
     return (
       <div className="org-nav">
         <div className="org-nav-top">
           <a href="https://zeehaus.com">
-            <img src="https://s3-us-west-2.amazonaws.com/pinta-digital/production/Images/logos/zeehaus_logo.png" />
+            <img src={logo} alt='zeehaus.com' />
           </a>
           {isMobile && (
             <span className="fas fa-bars" onClick={() => setOpen(true)} />

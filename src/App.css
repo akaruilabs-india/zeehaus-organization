@@ -642,7 +642,9 @@ h3 {
 .drawer-open {
   transform: translateX(0%);
 }
-
+  .org-nav-bottom {
+    margin-top: 1rem;
+  }
 @media only screen and (max-width: 600px) {
   .footerLinks ul li  {
     text-align: center;

@@ -3,8 +3,8 @@ import { Row, Col, Grid } from "react-flexbox-grid";
 import MobileDetect from "mobile-detect";
 import Colors from "./Colors";
 import ReactSimpleExpander from "./ReactSimpleExpander";
-const LogoWhite =
-  "https://s3-us-west-2.amazonaws.com/pinta-digital/production/Images/logos/zeehaus_logo.png";
+import LogoWhite from "./../Icon&Text(Foundation).png";
+import './style.css'
 
 const md = new MobileDetect(window.navigator.userAgent);
 const isMobile = md.mobile();
@@ -287,7 +287,7 @@ export default class Footer extends React.Component {
                               marginBottom: -10,
                             }}
                           >
-                            Patent Pending
+                            Patented
                           </p>{" "}
                         </div>
                         <div
@@ -295,53 +295,17 @@ export default class Footer extends React.Component {
                           className="logo-extra-big"
                         >
                           <img
-                            style={{ width: 150, cursor: "default" }}
+                            style={{ width: 150, cursor: "default", marginLeft: -5 }}
                             src={LogoWhite}
                           />
                           <span className="trademark">R</span>
                         </div>
-                        <p>
+                        <p style={{margin: 0}}>
                           1390 Market St, Suite 200 <br />
                           San Francisco, CA 94102
                         </p>
                       </Col>
-                      <Col xs={12} className="social-icons">
-                        <a
-                          href="https://www.facebook.com/ZeehausRE/"
-                          target="_blank"
-                          className="fa fa-facebook-square"
-                          style={styles.socialIcons}
-                          rel="noreferrer"
-                        />
-                        <a
-                          href="https://twitter.com/ZeehausRE/"
-                          target="_blank"
-                          className="fa fa-twitter"
-                          style={styles.socialIcons}
-                          rel="noreferrer"
-                        />
-                        <a
-                          href="https://www.linkedin.com/company/zeehaus-inc/"
-                          target="_blank"
-                          className="fa fa-linkedin"
-                          style={styles.socialIcons}
-                          rel="noreferrer"
-                        />
-                        <a
-                          href="https://www.instagram.com/zeehausre/"
-                          target="_blank"
-                          className="fa fa-instagram"
-                          style={styles.socialIcons}
-                          rel="noreferrer"
-                        />
-                        <a
-                          href="https://t.me/ZeehausRE"
-                          target="_blank"
-                          className="fa fa-telegram"
-                          style={styles.socialIcons}
-                          rel="noreferrer"
-                        />
-                      </Col>
+                    
                     </Row>
                   </Col>
                   <Col
@@ -592,7 +556,7 @@ export default class Footer extends React.Component {
           <Row center="xs" style={{ borderTop: "1px solid #ddd" }}>
             <Col md={6}>
               <p style={{ color: "#888", fontSize: "1.4rem" }}>
-                © {new Date().getFullYear()} Zeehaus.com <br /> Zeehaus Inc. All
+                © {new Date().getFullYear()} Zeehausfoundation.org <br /> Zeehaus Foundation Inc. All
                 rights reserved.
               </p>
             </Col>
