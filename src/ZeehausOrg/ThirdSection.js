@@ -292,7 +292,10 @@ export default function ThirdSection () {
               <p>
                 Have Questions? Email us at info@zeehausfoundation.org or submit
                 an online inquiry{" "}
-                <a href="/submit_inquiry#coin" className="link">
+                <a
+                  href="https://zeehaus.com/submit_inquiry#coin"
+                  className="link"
+                >
                   here
                 </a>
                 .
@@ -309,20 +312,29 @@ export default function ThirdSection () {
                 {equityDate <= currentDate ? (
                   <span>
                     Ready to buy your dream house?
-                    <a className="link" href="/sign_up/buyer">
+                    <a
+                      className="link"
+                      href="https://zeehaus.com/sign_up/applicant"
+                    >
                       Join here
                     </a>{" "}
                   </span>
                 ) : coinLaunchDate <= currentDate ? (
                   <span>
-                    <a className="link" href="/sign_up/community">
+                    <a
+                      className="link"
+                      href="https://zeehaus.com/sign_up/community"
+                    >
                       Join here
                     </a>{" "}
                     and buy Zeehaus Coins.
                   </span>
                 ) : (
                   <span>
-                    <a className="link" href="/sign_up/community">
+                    <a
+                      className="link"
+                      href="https://zeehaus.com/sign_up/community"
+                    >
                       Join here
                     </a>{" "}
                     and you will be one of the first to know when we launch the
@@ -340,7 +352,11 @@ export default function ThirdSection () {
             secondData={
               <p>
                 For additional information on the program, please visit the{" "}
-                <a href="/faq?q=458" className="link" target="_blank">
+                <a
+                  href="https://zeehaus.com/faq?q=458"
+                  className="link"
+                  target="_blank"
+                >
                   FAQs
                 </a>
                 .

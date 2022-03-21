@@ -3,7 +3,7 @@ import { Row, Col, Grid } from "react-flexbox-grid";
 import MobileDetect from "mobile-detect";
 import Colors from "./Colors";
 import ReactSimpleExpander from "./ReactSimpleExpander";
-import LogoWhite from "./../Icon&Text(Foundation).png";
+import LogoWhite from "./../logo.png";
 import './style.css'
 
 const md = new MobileDetect(window.navigator.userAgent);
@@ -284,7 +284,7 @@ export default class Footer extends React.Component {
                             style={{
                               color: "#111",
                               marginTop: 20,
-                              marginBottom: -10,
+                              marginBottom: -20,
                             }}
                           >
                             Patented
@@ -295,7 +295,7 @@ export default class Footer extends React.Component {
                           className="logo-extra-big"
                         >
                           <img
-                            style={{ width: 150, cursor: "default", marginLeft: -5 }}
+                            style={{ width: 250, cursor: "default", marginLeft: -5 }}
                             src={LogoWhite}
                           />
                           <span className="trademark">R</span>
