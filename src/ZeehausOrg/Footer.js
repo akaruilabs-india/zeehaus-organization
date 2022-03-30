@@ -3,7 +3,7 @@ import { Row, Col, Grid } from "react-flexbox-grid";
 import MobileDetect from "mobile-detect";
 import Colors from "./Colors";
 import ReactSimpleExpander from "./ReactSimpleExpander";
-import LogoWhite from "./../logo.png";
+import LogoWhite from "./../Icon.png";
 import './style.css'
 
 const md = new MobileDetect(window.navigator.userAgent);

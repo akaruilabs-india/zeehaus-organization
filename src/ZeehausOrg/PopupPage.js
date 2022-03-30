@@ -33,8 +33,8 @@ class PopupPage extends Component {
       insideDialog,
       innerChild,
     } = this.props;
-    return open ? (
-      <div className="popup-dialog popup-animation">
+    return true ? (
+      <div className="popup-dialog popup-animation" style={{display: open ? '' : 'none'}}>
         <div className="popup-overlay" onClick={() => this.handleClick()} />
         <div
           className={small ? "popup-content" : "popup-content container"}
