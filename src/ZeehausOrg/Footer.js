@@ -295,6 +295,7 @@ export default class Footer extends React.Component {
                           className="logo-extra-big"
                         >
                           <img
+                            alt='s'
                             style={{ width: 250, cursor: "default", marginLeft: -5 }}
                             src={LogoWhite}
                           />

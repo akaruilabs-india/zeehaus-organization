@@ -6,6 +6,8 @@ import MobileDetect from "mobile-detect";
 import ExtraContent from "./ExtraContent";
 import List from "./List";
 import PopupPage from "./PopupPage";
+import { CRYPTO_TRANSFER_MAX_LIMIT, EXTERNAL_EXCHANGE_LISTS, HAUS_TO_NFT_RATE_DESC } from "../Vars";
+import commaNumber from "comma-number";
 const md = new MobileDetect(window.navigator.userAgent);
 const isMobile = md.mobile();
 export const coinLaunchDate = new Date("April 1, 2022").getTime();
@@ -48,8 +50,9 @@ export default function ThirdSection() {
                     equity sharing
                   </span>{" "}
                   platform and Zeehaus coins, to bring a sustainable way to
-                  lower barriers to both real estate ownership and investment.
+                  lower barriers to rental properties and homeownership.
                 </h3>
+
                 <h3>
                   All proceeds from Zeehaus coins sold are held and distributed
                   by the Zeehaus Organization to help homebuyers purchase their
@@ -67,29 +70,56 @@ export default function ThirdSection() {
                 >
                   <div className="org-card-vert">
                     <div>
-                      <h1>Zeehaus Coin (“HAUS”)</h1>
+                      <h1>Zeehaus Coin (“ZEH”)</h1>
                       <p>
-                        Zeehaus coin is a cryptocurrency stored on the{" "}
+                        Zeehaus coin is a{" "}
                         <a
                           rel="noopener noreferrer"
                           target="_blank"
-                          href="https://www.stellar.org/"
+                          href="https://www.zeehaus.com/common/dao"
                         >
-                          Stellar blockchain ledger
+                          decentralized
                         </a>
-                        , with the primary goal of helping homebuyers and
-                        investors purchase properties.
+                        digital token, created by Zeehaus for the nonprofit,
+                        Zeehaus Foundation Inc, with the primary goal of helping
+                        homebuyers and coin holders purchase properties.
                       </p>
+
                       <ExtraContent>
                         <List>
-                          Unlike most digital tokens that have no intrinsic
-                          value, Zeehaus coins are backed by cash deposits and
-                          assets.
+                          Different from typical digital tokens, Zeehaus coins
+                          are truly backed by assets as they can be used to
+                          redeem for{" "}
+                          <a href="https://zeehaus.com/common/nft_and_zeehaus_coin">
+                            Non-Fungible Tokens (NFT)
+                          </a>
+                          , which represent ownership of a property.
+                        </List>
+
+                        <List>
+                          All funds from Zeehaus coins sold (and handled
+                          strictly by decentralized{" "}
+                          <a href="https://zeehaus.com/common/dao">
+                            Zeehaus DAO
+                          </a>
+                          ) = number of property shares (representing an equal
+                          number of NFT tokens issued) on Zeehaus portal +{" "}
+                          <a href="https://zeehaus.com/common/custody_and_refund">
+                            unused funds in custody
+                          </a>
+                          ) (held by nonprofit Zeehaus Foundation on the
+                          decentralized DAO).
                         </List>
                         <List>
-                          All proceeds from Zeehaus coins sold = number of
-                          property shares purchased on the Zeehaus portal +
-                          funds in custody.
+                          ZEH Adoption: We also hope the transparency,
+                          decentralization, and asset-backed nature of Zeehaus
+                          Coins can bring trust to the real estate community and
+                          beyond, which could in turn maximize its utility
+                          potential and become widely adopted outside of Zeehaus
+                          as a payment tool for a variety of goods and services,
+                          particularly in real estates, such as paying for
+                          services, real estate commissions, advertising, and
+                          potentially real estate transactions.
                         </List>
                       </ExtraContent>
                     </div>
@@ -111,26 +141,56 @@ export default function ThirdSection() {
                     <div>
                       <h1>Homeownership</h1>
                       <p>
-                        Nonprofit: Proceeds from all HAUS coins sold go to the
-                        nonprofit organization, Zeehaus Foundation Inc. HAUS
-                        coins are sold via a public exchange and/or on the
-                        Zeehaus platform. The holders of Zeehaus coins could
-                        decide to sell the coins and use the USD to invest if
-                        the coin price is higher than $1.
+                        Nonprofit: Proceeds from all ZEH coin sales or auctions
+                        are stored in the treasury of the nonprofit
+                        organization, Zeehaus Foundation Inc and handled
+                        strictly by the{" "}
+                        <a
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href="https://zeehaus.com/common/dao"
+                        >
+                          Zeehaus DAO
+                        </a>
+                        . The holders of Zeehaus coins can use them to purchase
+                        fractional equity sharing properties through the
+                        ownership of{" "}
+                        <a
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href="https://zeehaus.com/common/nft"
+                        >
+                          NFT tokens
+                        </a>
+                        . Each Zeehaus coin can be used to purchase{" "}
+                        {HAUS_TO_NFT_RATE_DESC}, which is the “Preset ZEH Coin
+                        Price.”
+                      </p>
+                      <p>
+                        “Preset ZEH Coin Price” will stay constant when
+                        exchanging into NFT tokens on the Zeehaus platform. The
+                        ratio will never change regardless of the price on any
+                        open market.
                       </p>
                       <ExtraContent>
                         <List>
-                          Coins Backed by Assets: The price of the Zeehaus coins
-                          is not tied to asset prices, but the coins are backed
-                          by cash deposits and assets, as each coin can be used
-                          to redeem and invest in one share of{" "}
+                          Coins Backed by Assets: The coins are backed by NFT
+                          tokens, as each Zeehaus coin can be used to purchase
+                          {HAUS_TO_NFT_RATE_DESC} of any available equity
+                          sharing properties being offered on the Zeehaus
+                          Investor platform, with each NFT Token representing $1
+                          in ownership. Funds from the coin sales and net
+                          incomes from{" "}
                           <a
                             rel="noopener noreferrer"
                             target="_blank"
                             href="https://zeehaus.com/common/equity_sharing"
                           >
                             equity sharing properties.
-                          </a>
+                          </a>{" "}
+                          sold are held by the nonprofit organization (Zeehaus
+                          Foundation Inc.) on the decentralized DAO and are
+                          strictly used to help homebuyers purchase properties.
                         </List>
                         <List>
                           Homeownership: All proceeds from coins sold are held
@@ -250,43 +310,81 @@ export default function ThirdSection() {
                 >
                   <div className="org-card-vert">
                     <div>
-                      <h1>Investing in Equity Sharing</h1>
+                      <h1>Buying Fractional Rental Properties</h1>
                       <p>
-                        By giving investors home equity, we can reduce a buyer’s
-                        monthly payments while still providing investors with a
-                        transparent way to invest at a much lower threshold
+                        By sharing home equity, we can reduce a buyer’s monthly
+                        payments while still providing a transparent way to
+                        purchase fractional ownership at a much lower threshold
                         (starting at $100) compared with traditional rental
                         investment properties.
                       </p>
-                      <ExtraContent>
+                      <ExtraContent closeLabel="Additional Fraction Owner Benefits">
                         <List>
+                          Transaction costs  – Buy and sell equity sharing
+                          ownership on Zeehaus.com at a{" "}
                           <a
                             rel="noopener noreferrer"
                             target="_blank"
                             href="https://zeehaus.com/common/investment_fee"
                           >
-                            Low-cost investment
-                          </a>
-                           – Buy and sell equity sharing ownership publicly at a
-                          fraction of the costs compared with investing in
-                          traditional rental properties.
+                            fraction of the costs
+                          </a>{" "}
+                          compared with owning traditional rental properties.
                         </List>
                         <List>
-                          Liquidity – Investment in equity sharing ownership on
-                          the Zeehaus platform leverages the best of both worlds
-                          in real estate with liquidity and benefits of actual
-                          ownership.
+                          Liquidity – Fractional equity sharing ownership on the
+                          Zeehaus platform leverages the best of both worlds in
+                          real estate with potential liquidity and benefits of
+                          actual ownership.
                         </List>
                         <List>
-                          Tax benefits – Invest in shared equity ownership
-                          directly or through pass-through asset-holding entity,
-                          such as Trust, offers potential tax benefits such as
-                          depreciation deduction and capital gain treatment of
-                          income. Please note that when investing in
-                          owner-occupied Equity Sharing investment, the income
-                          you receive may have tax impacts on your financial
-                          situation. Please consult with a tax advisor before
-                          investing. 
+                          Tax benefits – Fractional ownership in rental
+                          properties, through a pass-through asset-holding
+                          entity such as Trust, offers potential tax benefits
+                          such as depreciation deduction and capital gain
+                          treatment of income. Please note that through
+                          owner-occupied fractional property ownership, the
+                          income you receive may have tax impacts on your
+                          financial situation. Please consult with a tax advisor
+                          before investing. 
+                        </List>
+                        <List>
+                          Purchasing Zeehaus coins does not entitle the owner of
+                          the coins to purchase fractional properties on Zeehaus
+                          automatically. Prior to buying properties, each holder
+                          of Zeehaus coins is required to provide your US-issued
+                          Social Security Number (SSN) or Tax ID, upload ID
+                          documents, and complete Know-Your-Customer (KYC) and
+                          Anti-Money Laundering (AML) verifications if you
+                          purchased Zeehaus coins on a public exchange or
+                          third-party auction site. If you are unable or
+                          unwilling to provide a valid SSN (or Tax ID), pass the
+                          KYC verifications, and follow the rules and
+                          limitations of the Zeehaus platform (which may change
+                          from time to time), you may not be allowed to purchase
+                          even if you hold Zeehaus coins.
+                        </List>
+                        <List>
+                          Monthly Limits: Please note that, as part of our
+                          Anti-Money Laundering (AML) policy, there is a monthly
+                          limit of ${commaNumber(CRYPTO_TRANSFER_MAX_LIMIT)}{" "}
+                          when using ZEH coins to redeem and purchase equity
+                          sharing properties. When buying Zeehaus Coins on a
+                          third-party exchange or auction site, you will be
+                          subject to its respective rules and limitations
+                          regarding account verification, user payment methods,
+                          and limits in the purchase, sale, and transfer.
+                        </List>
+                        <List>
+                          <a
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            href="https://zeehaus.com/common/coin_property_purchase"
+                          >
+                            Learn more
+                          </a>{" "}
+                          about the limitation and rules of using ZEH Coins to
+                          buy fractional ownership.
                         </List>
                       </ExtraContent>
                     </div>
@@ -317,9 +415,9 @@ export default function ThirdSection() {
                 }
               />
             </Tab>
-            <Tab label="How to Buy HAUS Coins">
+            <Tab label="Use ZEH to Purchase Properties">
               <br />
-              <h1 className="center">How to Buy HAUS Coins</h1>
+              <h1 className="center">Use ZEH to Purchase Properties</h1>
               <br />
               <span className="gray-line" />
               <br />
@@ -327,7 +425,7 @@ export default function ThirdSection() {
               {!iframeLoaded && <h3>Just a moment...</h3>}
               <iframe
                 ref={(n) => setIframeTwo(n)}
-                title="How to Buy HAUS Coins"
+                title="Use ZEH to Purchase Properties"
                 frameBorder="0"
                 height="1500"
                 onLoad={() => setIframeLoaded(true)}
@@ -392,7 +490,8 @@ export default function ThirdSection() {
                   </a>{" "}
                   and buy Zeehaus Coins.
                 </span>
-              ) : (
+              ) : currentDate < coinLaunchDate &&
+                EXTERNAL_EXCHANGE_LISTS === "None" ? (
                 <span>
                   <a
                     rel="noopener noreferrer"
@@ -405,6 +504,14 @@ export default function ThirdSection() {
                   and you will be one of the first to know when we launch the
                   Zeehaus Coin purchase program.
                 </span>
+              ) : currentDate < coinLaunchDate &&
+                EXTERNAL_EXCHANGE_LISTS !== "None" ? (
+                <span>
+                  Zeehaus Coin can be purchased on a third-party auction or
+                  token launch site: {EXTERNAL_EXCHANGE_LISTS}
+                </span>
+              ) : (
+                <span />
               )}
             </p>
           }

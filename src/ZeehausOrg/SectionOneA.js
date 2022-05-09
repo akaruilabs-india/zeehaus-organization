@@ -20,7 +20,7 @@ export default function SectionOneA () {
                   sm={12}
                   md={8}
                   mdOffset={1}
-                  style={{ padding: 0, paddingTop: '0rem' }}
+                  style={{ padding: 0, paddingTop: "0rem" }}
                 >
                   <h1>Today’s Challenges</h1>
                   <span className="gray-line" />
@@ -39,12 +39,12 @@ export default function SectionOneA () {
                     housing crisis.
                   </List>
                   <List>
-                    Lack of liquidity: real estate requires significant capital
-                    & long-term commitments.
+                    Lack of liquidity: Real estate requires significant capital
+                    & long-term commitments
                   </List>
                   <List>
-                    No easy way to invest in real estate, high-risk, complex
-                    process for rental property.
+                    Buying rental property is complex with time-consuming
+                    tenant management
                   </List>
                 </Col>
               </Row>
@@ -52,5 +52,5 @@ export default function SectionOneA () {
           </Row>
         </Grid>
       </div>
-    )
+    );
 }

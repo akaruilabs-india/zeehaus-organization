@@ -77,7 +77,10 @@ export default function MiddleSection () {
                         homebuilder or government.
                       </p>
                     </div>
-                    <img src="https://images.pexels.com/photos/7172858/pexels-photo-7172858.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                    <img
+                      alt="s"
+                      src="https://images.pexels.com/photos/7172858/pexels-photo-7172858.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    />
                   </div>
                 </Col>
                 <Col
@@ -89,14 +92,18 @@ export default function MiddleSection () {
                 >
                   <div className="org-card">
                     <div>
-                      <h1>Help Everyone Buy and Invest in Real Estate</h1>
+                      <h1>Help Everyone Purchase Rental Properties</h1>
                       <p>
                         Instead of buying full property or nothing at all, there
-                        is a better way: Own a portion and share equity &
-                        expenses.
+                        is a better way: Own a portion and{" "}
+                        <a href="https://zeehaus.com/common/equity_sharing" rel='noopener noreferrer' target={'_blank'}>share equity</a> &
+                        expenses
                       </p>
                     </div>
-                    <img src="https://images.pexels.com/photos/4670707/pexels-photo-4670707.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                    <img
+                      alt="s"
+                      src="https://images.pexels.com/photos/4670707/pexels-photo-4670707.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    />
                   </div>
                 </Col>
               </Row>
