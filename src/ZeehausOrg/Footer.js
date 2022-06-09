@@ -124,189 +124,29 @@ export default class Footer extends React.Component {
             <Row center="xs" start="md" middle="xs">
               <Col md={12} style={{ padding: 0 }}>
                 <Row start="xs" top="xs">
-                  {/* <Col xs={12} style={{ display: isMobile ? "block" : "none" }}>
-                    <ReactSimpleExpander header={"Services"}>
-                      <div
-                        style={styles.footerSubHeads}
-                        className="footerLinks"
-                      >
-                        <ul className={isMobile ? "text-left" : "text-center"}>
-                          <li>
-                            <a href="https://zeehaus.com/buy_your_home">
-                              Homebuyers
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://zeehaus.com/issuer_rehab">
-                              Rehab & Flip
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://zeehaus.com/invest_with_homebuyer">
-                              Investors
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://zeehaus.com/seller">Sellers</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </ReactSimpleExpander>
-                    <ReactSimpleExpander header={"Partners"}>
-                      <div
-                        style={styles.footerSubHeads}
-                        className="footerLinks"
-                      >
-                        <ul className={isMobile ? "text-left" : "text-center"}>
-                          <li>
-                            <a href="https://zeehaus.com/real_estate_agent#digital">
-                              Digital Transaction Platform
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://zeehaus.com/real_estate_agent#submit_offer">
-                              Buyer Agents
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://zeehaus.com/real_estate_agent#list_a_property">
-                              Listing Agents
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://zeehaus.com/real_estate_agent#invite">
-                              Referral Program
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </ReactSimpleExpander>
-                    <ReactSimpleExpander header={"About"}>
-                      <div
-                        style={styles.footerSubHeads}
-                        className="footerLinks"
-                      >
-                        <ul className={isMobile ? "text-left" : "text-center"}>
-                          <li>
-                            <a
-                              href="https://zeehaus.com/submit_inquiry"
-                              className="link-4"
-                            >
-                              Contact Us
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="link-4"
-                              href="https://zeehaus.com/about_us"
-                            >
-                              About Us
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://zeehaus.com/about_us#team">
-                              Our Team
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </ReactSimpleExpander>
-                    <ReactSimpleExpander header={"Learn"}>
-                      <div
-                        style={styles.footerSubHeads}
-                        className="footerLinks"
-                      >
-                        <ul className={isMobile ? "text-left" : "text-center"}>
-                          <li>
-                            <a href="https://zeehaus.com/our_markets">
-                              Our Markets
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://zeehaus.com/risk_and_protection#blockchain">
-                              Blockchain
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://zeehaus.com/videos">Videos</a>
-                          </li>
-                          <li>
-                            <a href="https://zeehaus.com/faq">FAQ</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </ReactSimpleExpander>
-                    <ReactSimpleExpander header={"Reference"}>
-                      <div
-                        style={styles.footerSubHeads}
-                        className="footerLinks"
-                      >
-                        <ul className={isMobile ? "text-left" : "text-center"}>
-                          <li>
-                            <a
-                              className="link-4"
-                              href="https://zeehaus.com/privacy"
-                            >
-                              Privacy Policy
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="link-4"
-                              href="https://zeehaus.com/terms"
-                            >
-                              Terms of Service
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="link-4"
-                              href="https://zeehaus.com/cookie_policy"
-                            >
-                              Cookie Policy
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://zeehaus.com/agent_terms">
-                              Agent Terms of Use
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </ReactSimpleExpander>
-                  </Col> */}
                   <Col md={3} xs={12}>
                     <Row start={"lg"} center="xs" bottom="xs">
                       <Col md={12}>
-                        <div>
-                          <p
-                            className="sub-heading2"
-                            style={{
-                              color: "#111",
-                              marginTop: 20,
-                              marginBottom: -20,
-                            }}
-                          >
-                            Patented
-                          </p>{" "}
-                        </div>
                         <div
                           style={styles.footerFirmName}
                           className="logo-extra-big"
                         >
                           <img
-                            alt='s'
-                            style={{ width: 250, cursor: "default", marginLeft: -5 }}
+                            alt="s"
+                            style={{
+                              width: 250,
+                              cursor: "default",
+                              marginLeft: -5,
+                            }}
                             src={LogoWhite}
                           />
                           <span className="trademark">R</span>
                         </div>
-                        <p style={{margin: 0}}>
+                        <p style={{ margin: 0 }}>
                           1390 Market St, Suite 200 <br />
                           San Francisco, CA 94102
                         </p>
                       </Col>
-                    
                     </Row>
                   </Col>
                   <Col
@@ -316,10 +156,7 @@ export default class Footer extends React.Component {
                     style={{ paddingLeft: isMobile ? "" : "2rem" }}
                   >
                     <Row start="xs">
-                      <Col
-                        md={4}
-                        xs={12}
-                      >
+                      <Col md={4} xs={12}>
                         <h3 style={styles.footerHeads}>Services</h3>
                         <div
                           style={styles.footerSubHeads}
@@ -332,7 +169,31 @@ export default class Footer extends React.Component {
                               <a
                                 onClick={() =>
                                   redirectTo(
-                                    "https://zeehaus.com/sign_up/community",
+                                    "https://zeehaus.com/common/dao",
+                                    this.props
+                                  )
+                                }
+                              >
+                                Zeehaus DAO
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                onClick={() =>
+                                  redirectTo(
+                                    "https://zeehaus.com/common/consensus_vote",
+                                    this.props
+                                  )
+                                }
+                              >
+                                Consensus Voting
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                onClick={() =>
+                                  redirectTo(
+                                    "https://zeehaus.com/common/coin_property_purchase",
                                     this.props
                                   )
                                 }
@@ -361,40 +222,13 @@ export default class Footer extends React.Component {
                                   )
                                 }
                               >
-                                Investors
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                onClick={() =>
-                                  redirectTo(
-                                    "https://zeehaus.com/seller",
-                                    this.props
-                                  )
-                                }
-                              >
-                                Sellers
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                onClick={() =>
-                                  redirectTo(
-                                    "https://zeehaus.com/real_estate_agent#digital",
-                                    this.props
-                                  )
-                                }
-                              >
-                                Digital Transaction Platform
+                                Real Estate Investors
                               </a>
                             </li>
                           </ul>
                         </div>
                       </Col>
-                      <Col
-                        md={4}
-                        xs={12}
-                      >
+                      <Col md={4} xs={12}>
                         <h3 style={styles.footerHeads}>Learn</h3>
                         <div
                           style={styles.footerSubHeads}
@@ -403,18 +237,6 @@ export default class Footer extends React.Component {
                           <ul
                             className={isMobile ? "text-left" : "text-center"}
                           >
-                            <li>
-                              <a
-                                onClick={() =>
-                                  redirectTo(
-                                    "https://zeehaus.com/common/coin_property_purchase",
-                                    this.props
-                                  )
-                                }
-                              >
-                                How to Buy Coins
-                              </a>
-                            </li>
                             <li>
                               <a
                                 onClick={() =>
@@ -463,13 +285,22 @@ export default class Footer extends React.Component {
                                 Contact Us
                               </a>
                             </li>
+                            <li>
+                              <a
+                                onClick={() =>
+                                  redirectTo(
+                                    "https://zeehaus.com/faq",
+                                    this.props
+                                  )
+                                }
+                              >
+                                Contact Us
+                              </a>
+                            </li>
                           </ul>
                         </div>
                       </Col>
-                      <Col
-                        md={4}
-                        xs={12}
-                      >
+                      <Col md={4} xs={12}>
                         <h3 style={styles.footerHeads}>Reference</h3>
                         <div
                           style={styles.footerSubHeads}
@@ -557,8 +388,8 @@ export default class Footer extends React.Component {
           <Row center="xs" style={{ borderTop: "1px solid #ddd" }}>
             <Col md={6}>
               <p style={{ color: "#888", fontSize: "1.4rem" }}>
-                © {new Date().getFullYear()} Zeehausfoundation.org <br /> Zeehaus Foundation Inc. All
-                rights reserved.
+                © {new Date().getFullYear()} Zeehausfoundation.org <br />{" "}
+                Zeehaus Foundation Inc. All rights reserved.
               </p>
             </Col>
           </Row>

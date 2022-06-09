@@ -111,6 +111,57 @@ export default function ThirdSection() {
                           decentralized DAO).
                         </List>
                         <List>
+                          ZEH Coin Supply: The supply of ZEH coins is controlled
+                          by the DAO Smart Contract. When the Zeehaus Coin
+                          balance of Zeehaus Foundation’s treasury e-wallet
+                          falls below 10% of outstanding Zeehaus Coins, and the
+                          combined balance of USD + USDC also falls below 10% of
+                          outstanding Zeehaus Coins, then a{" "}
+                          <a href="https://zeehaus.com/common/consensus_vote">
+                            consensus voting
+                          </a>{" "}
+                          will also be initiated by the DAO Smart Contract. Only
+                          after a vote is voted by ZEH holders and passed,
+                          additional coins can potentially be released or sold
+                          via a token sale, auction, or on an available
+                          exchange.
+                        </List>
+                        <List>
+                          Coins in circulation: Initially, 100M ZEH coins are
+                          generated. When coins are redeemed to purchase NFT
+                          tokens, these coins will be released back to the
+                          supply instead of issuing additional tokens. When too
+                          many existing coin holders do not redeem the issued
+                          coins on Zeehaus, these coins remain in circulation,
+                          thus additional coins will be issued in order to raise
+                          additional funds.
+                        </List>
+                        <List>
+                          Zeehaus DAO (Decentralized Autonomous Organization) is
+                          controlled by its Smart Contract and{" "}
+                          <a href="https://zeehaus.com/common/consensus_vote">
+                            consensus voting
+                          </a>
+                          from the ZEH holders: (1) vote on the issuance of
+                          additional ZEH coins to meet the demand of equity
+                          sharing property purchases; and (2) vote to increase
+                          the “ZEH Coin Redemption Price” which is the exchange
+                          rate used by ZEH holders to purchase fractional
+                          property shares on Zeehaus.com.
+                        </List>
+                        <List>
+                          ZEH Refund Policy: While Zeehaus coin purchase is
+                          non-refundable, ZEH coins purchased in an auction or
+                          token sale and meet the terms of the refund policy can
+                          be refunded to Zeehaus, subject to the Refund Policy
+                          from Token Sale. ZEH purchases that do not meet the
+                          terms of the{" "}
+                          <a href="https://zeehaus.com/common/custody_and_refund">
+                            refund policy
+                          </a>
+                          cannot be sold back to Zeehaus once purchased.
+                        </List>
+                        <List>
                           ZEH Adoption: We also hope the transparency,
                           decentralization, and asset-backed nature of Zeehaus
                           Coins can bring trust to the real estate community and
@@ -120,6 +171,16 @@ export default function ThirdSection() {
                           particularly in real estates, such as paying for
                           services, real estate commissions, advertising, and
                           potentially real estate transactions.
+                        </List>
+                        <List>
+                          Not for Homebuyers: ZEH coins are not designed to be
+                          used by homebuyers to purchase properties. Buyers
+                          generally follow the normal homebuying process,
+                          contribute to the equity using cash, and benefit
+                          indirectly from the ZEH coins as the funds from the
+                          token sale are used to co-own homes, which in terms
+                          help lower monthly housing costs and achieve
+                          homeownership.
                         </List>
                       </ExtraContent>
                     </div>
@@ -163,24 +224,30 @@ export default function ThirdSection() {
                           NFT tokens
                         </a>
                         . Each Zeehaus coin can be used to purchase{" "}
-                        {HAUS_TO_NFT_RATE_DESC}, which is the “Preset ZEH Coin
-                        Price.”
+                        {HAUS_TO_NFT_RATE_DESC}, which is the “ZEH Coin
+                        Redemption Price.”
                       </p>
                       <p>
-                        “Preset ZEH Coin Price” will stay constant when
-                        exchanging into NFT tokens on the Zeehaus platform. The
-                        ratio will never change regardless of the price on any
-                        open market.
+                        “ZEH Coin Redemption Price” will stay constant when
+                        using Zeehaus coins to purchase property shares on the
+                        Zeehaus platform unless a price change is approved by
+                        ZEH holders via a{" "}
+                        <a
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href="https://zeehaus.com/common/consensus_vote"
+                        >
+                          Consensus Vote
+                        </a>{" "}
+                        conducted by DAO. Prior to a “pass vote,” this ratio
+                        will not change regardless of the price on any open
+                        market.
                       </p>
                       <ExtraContent>
                         <List>
                           Coins Backed by Assets: The coins are backed by NFT
                           tokens, as each Zeehaus coin can be used to purchase
-                          {HAUS_TO_NFT_RATE_DESC} of any available equity
-                          sharing properties being offered on the Zeehaus
-                          Investor platform, with each NFT Token representing $1
-                          in ownership. Funds from the coin sales and net
-                          incomes from{" "}
+                          {HAUS_TO_NFT_RATE_DESC} of any available{" "}
                           <a
                             rel="noopener noreferrer"
                             target="_blank"
@@ -188,9 +255,13 @@ export default function ThirdSection() {
                           >
                             equity sharing properties.
                           </a>{" "}
-                          sold are held by the nonprofit organization (Zeehaus
-                          Foundation Inc.) on the decentralized DAO and are
-                          strictly used to help homebuyers purchase properties.
+                          being offered on the Zeehaus Investor platform, with
+                          each NFT Token representing $1 in ownership. Funds
+                          from the coin sales and net proceeds from equity
+                          sharing properties held and later sold will be
+                          re-deposited back to the treasury account on the
+                          decentralized DAO and are strictly used to help
+                          homebuyers purchase properties.
                         </List>
                         <List>
                           Homeownership: All proceeds from coins sold are held
@@ -198,17 +269,16 @@ export default function ThirdSection() {
                           to help homebuyers achieve homeownership.
                         </List>
                         <List>
-                          Rental Income: For any shares not bought/redeemed by
-                          coin holders, profits and rental income from equity
-                          sharing investments will go to the nonprofit
-                          organization (Zeehaus Foundation Inc.) to cover
-                          operating expenses.
+                          Rental Income: For property equity not bought/redeemed
+                          by ZEH coin holders, rental income received from
+                          Zeehaus Foundation’s equity sharing investments will
+                          be used to fund the nonprofit operation.
                         </List>
                         <List>
-                          Re-Invest: When a property is sold or bought out by
-                          the homeowner, for each property share, $1 per
-                          property share sold will be re-invested by the
-                          nonprofit to help more homebuyers.
+                          Re-Invest: When an equity sharing property held by
+                          Zeehaus Foundation is sold or bought out by the
+                          homeowner, net proceeds from properties sold by the
+                          nonprofit will be used to help more homebuyers.
                         </List>
                       </ExtraContent>
                     </div>
