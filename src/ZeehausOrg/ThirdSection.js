@@ -28,7 +28,7 @@ export default function ThirdSection() {
   }, [iframeOne, iframeTwo, iframeLoaded]);
 
   const handleIframeMessage = (e) => {
-    console.log("EEEE", e.data);
+    // console.log("EEEE", e.data);
     let { data } = e;
     if (data && ["two", "one", "three", "four"].includes(data)) {
       console.log("message", data);
@@ -409,7 +409,7 @@ export default function ThirdSection() {
                 onLoad={() => setIframeLoaded(true)}
                 scrolling="no"
                 src={
-                  process.env.NODE_ENV !== "production"
+                  false
                     ? "http://localhost:3000/coin/zeehausorg"
                     : "https://zeehaus.com/coin/zeehausorg"
                 }
@@ -433,7 +433,7 @@ export default function ThirdSection() {
                 width="100%"
                 scrolling="no"
                 src={
-                  process.env.NODE_ENV !== "production"
+                  false
                     ? "http://localhost:3000/org/coin_property_purchase"
                     : "https://zeehaus.com/org/coin_property_purchase"
                 }
@@ -550,7 +550,7 @@ export default function ThirdSection() {
               width="100%"
               scrolling="no"
               src={
-                process.env.NODE_ENV !== "production"
+                false
                   ? "http://localhost:3000/coin/dialog_one"
                   : "https://zeehaus.com/coin/dialog_one"
               }
@@ -568,7 +568,7 @@ export default function ThirdSection() {
               width="100%"
               scrolling="no"
               src={
-                process.env.NODE_ENV !== "production"
+                false
                   ? "http://localhost:3000/coin/dialog_two"
                   : "https://zeehaus.com/coin/dialog_two"
               }
@@ -586,7 +586,7 @@ export default function ThirdSection() {
               width="100%"
               scrolling="no"
               src={
-                process.env.NODE_ENV !== "production"
+                false
                   ? "http://localhost:3000/coin/dialog_three"
                   : "https://zeehaus.com/coin/dialog_three"
               }
@@ -604,7 +604,7 @@ export default function ThirdSection() {
               width="100%"
               scrolling="no"
               src={
-                process.env.NODE_ENV !== "production"
+                false
                   ? "http://localhost:3000/coin/dialog_four"
                   : "https://zeehaus.com/coin/dialog_four"
               }
