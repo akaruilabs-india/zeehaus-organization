@@ -16,9 +16,9 @@ body {
     z-index: -1;
     width: 100%;
     height: 100vh;
-  background-image: url('./Background.jpg');
+  /* background-image: url('./Background.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 code {

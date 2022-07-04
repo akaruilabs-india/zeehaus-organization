@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Col, Grid, Row } from 'react-flexbox-grid'
 import PopupPage from './PopupPage';
+import SectionLogo from "./SectionLogo";
 
 export default function MiddleSection () {
     const [popupOpen, setPopupOpen] = useState(false);
@@ -9,8 +10,9 @@ export default function MiddleSection () {
         <Grid>
           <Row className="org-section" middle="xs" center="xs">
             <Col xs={12} className="text">
+              <SectionLogo />
               <h1 className="center">
-                Equity Sharing, Zeehaus Coins, and Blockchain
+                Equity Sharing, Zeehaus Coins (ZEH), and Blockchain
               </h1>
               <h3>
                 Real estate is ready for disruption. We have a unique approach

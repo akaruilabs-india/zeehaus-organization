@@ -10,7 +10,7 @@ export default class DAOConsensus extends Component {
         //   ref={(n) => setIframeTwo(n)}
           title="Use ZEH to Purchase Properties"
           frameBorder="0"
-          height="1500"
+          height="2000"
           width="100%"
           scrolling="no"
           src={

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Grid, Row } from 'react-flexbox-grid'
 import { List} from './Element'
+import SectionLogo from './SectionLogo';
 
 export default function SectionOneA () {
     return (
@@ -22,6 +23,7 @@ export default function SectionOneA () {
                   mdOffset={1}
                   style={{ padding: 0, paddingTop: "0rem" }}
                 >
+                  <SectionLogo />
                   <h1>Today’s Challenges</h1>
                   <span className="gray-line" />
                   <h2>Challenges faced by buyers and real estate investors</h2>
@@ -43,8 +45,8 @@ export default function SectionOneA () {
                     & long-term commitments
                   </List>
                   <List>
-                    Buying rental property is complex with time-consuming
-                    tenant management
+                    Buying rental property is complex with time-consuming tenant
+                    management
                   </List>
                 </Col>
               </Row>

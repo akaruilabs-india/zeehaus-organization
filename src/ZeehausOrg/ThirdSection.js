@@ -8,6 +8,7 @@ import List from "./List";
 import PopupPage from "./PopupPage";
 import { CRYPTO_TRANSFER_MAX_LIMIT, EXTERNAL_EXCHANGE_LISTS, HAUS_TO_NFT_RATE_DESC } from "../Vars";
 import commaNumber from "comma-number";
+import SectionLogo from "./SectionLogo";
 const md = new MobileDetect(window.navigator.userAgent);
 const isMobile = md.mobile();
 export const coinLaunchDate = new Date("April 1, 2022").getTime();
@@ -40,6 +41,7 @@ export default function ThirdSection() {
     <div>
       <Grid>
         <Row className="org-section" middle="xs" center="xs">
+          <SectionLogo />
           <Tabs v5 style={{ width: "100%" }}>
             <Tab label="Nonprofit">
               <Col xs={12} className="text">
@@ -79,7 +81,7 @@ export default function ThirdSection() {
                           href="https://www.zeehaus.com/common/dao"
                         >
                           decentralized
-                        </a>
+                        </a>{" "}
                         digital token, created by Zeehaus for the nonprofit,
                         Zeehaus Foundation Inc, with the primary goal of helping
                         homebuyers and coin holders purchase properties.

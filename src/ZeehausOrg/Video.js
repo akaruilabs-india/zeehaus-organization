@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Grid, Row } from 'react-flexbox-grid'
+import SectionLogo from './SectionLogo';
 
 export default function CoinVideo () {
     return (
@@ -15,6 +16,7 @@ export default function CoinVideo () {
                   lg={6}
                   style={{ padding: 0, paddingTop: "2rem" }}
                 >
+                  <SectionLogo />
                   <h1 className="center">Video</h1>
                   <h3>
                     Watch a quick introductory video to learn more about Zeehaus

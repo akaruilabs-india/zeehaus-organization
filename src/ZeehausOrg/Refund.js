@@ -6,19 +6,21 @@ export default class Refund extends Component {
   render() {
     return (
       <div>
-        <iframe
-          //   ref={(n) => setIframeTwo(n)}
-          title="Refund"
-          frameBorder="0"
-          height="1500"
-          width="100%"
-          scrolling="no"
-          src={
-            false
-              ? "http://localhost:3000/org/refund"
-              : "https://zeehaus.com/org/refund"
-          }
-        />
+        <Grid>
+          <iframe
+            //   ref={(n) => setIframeTwo(n)}
+            title="Refund"
+            frameBorder="0"
+            height="1000"
+            width="100%"
+            scrolling="no"
+            src={
+              false
+                ? "http://localhost:3000/org/refund"
+                : "https://zeehaus.com/org/refund"
+            }
+          />
+        </Grid>
       </div>
     );
   }
