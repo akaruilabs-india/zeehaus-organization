@@ -11,7 +11,7 @@ export default function SectionOneA () {
             <Col xs={12} md={6}>
               <img
                 className="org-section-img"
-                src="https://images.pexels.com/photos/1058958/pexels-photo-1058958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                src="https://pinta-digital.s3.us-west-2.amazonaws.com/production/zeehaus_org_images/1.jpg"
               />
             </Col>
             <Col xs={12} md={6} className="text">

@@ -37,7 +37,7 @@ export default function SectionOne () {
             <img
               style={{ height: "60vh" }}
               className="org-section-img"
-              src="https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              src="https://pinta-digital.s3.us-west-2.amazonaws.com/production/zeehaus_org_images/2.jpg"
             />
           </Col>
         </Row>

@@ -116,12 +116,23 @@
   background: #f8f8f8;
   padding-left: 2rem;
   min-height: 350px;
+  position: relative;
   box-sizing: border-box;
 }
 .org-card h1,
 .org-card-vert h1 {
   font-size: 1.2rem;
   letter-spacing: 4px;
+}
+.org-card-vert .coin-back {
+  position: absolute;
+    right: 0;
+    width: 100%;
+    top: -100px;
+    height: 400px;
+    display: block;
+    opacity: 0.08;
+    object-fit: contain;
 }
 .org-card div {
   width: 60%;
@@ -145,6 +156,7 @@
 }
 .org-card-vert {
   display: flex;
+  position: relative;
   align-items: center;
   width: 96%;
   justify-content: flex-end;

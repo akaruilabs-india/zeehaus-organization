@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Col, Grid, Row } from "react-flexbox-grid";
+import { showLocal } from "./ThirdSection";
 
 export default class Refund extends Component {
   state = {};
@@ -15,7 +16,7 @@ export default class Refund extends Component {
             width="100%"
             scrolling="no"
             src={
-              false
+              showLocal
                 ? "http://localhost:3000/org/refund"
                 : "https://zeehaus.com/org/refund"
             }

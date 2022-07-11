@@ -9,12 +9,17 @@ import PopupPage from "./PopupPage";
 import { CRYPTO_TRANSFER_MAX_LIMIT, EXTERNAL_EXCHANGE_LISTS, HAUS_TO_NFT_RATE_DESC } from "../Vars";
 import commaNumber from "comma-number";
 import SectionLogo from "./SectionLogo";
+export const showLocal = false
 const md = new MobileDetect(window.navigator.userAgent);
 const isMobile = md.mobile();
 export const coinLaunchDate = new Date("April 1, 2022").getTime();
 export const currentDate = new Date().getTime();
 export const equityDate = new Date("January 1, 2022").getTime();
-
+const flex = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
+}
 export default function ThirdSection() {
   const [iframeLoaded, setIframeLoaded] = useState(false);
   const [popupOpen, setPopupOpen] = useState(false);
@@ -44,24 +49,30 @@ export default function ThirdSection() {
           <SectionLogo />
           <Tabs v5 style={{ width: "100%" }}>
             <Tab label="Nonprofit">
-              <Col xs={12} className="text">
-                <h1 className="center">Help Achieve Homeownership</h1>
-                <h3>
-                  We are a new real estate ecosystem, leveraging the{" "}
-                  <span className="link" onClick={() => setPopupOpen(true)}>
-                    equity sharing
-                  </span>{" "}
-                  platform and Zeehaus coins, to bring a sustainable way to
-                  lower barriers to rental properties and homeownership.
-                </h3>
+              <Row start="xs" style={{ padding: "3rem 0" }}>
+                <Col xs={12} sm={4} lg={3} style={{ ...flex }}>
+                  <SectionLogo justCoin />
+                </Col>
+                <Col xs={12} sm={8} lg={9} className="">
+                  <h1 className="">Help Achieve Homeownership</h1>
+                  <h3>
+                    We are a new real estate ecosystem, leveraging the{" "}
+                    <span className="link" onClick={() => setPopupOpen(true)}>
+                      equity sharing
+                    </span>{" "}
+                    platform and Zeehaus coins, to bring a sustainable way to
+                    lower barriers to rental properties and homeownership.
+                  </h3>
 
-                <h3>
-                  All proceeds from Zeehaus coins sold are held and distributed
-                  by the Zeehaus Organization to help homebuyers purchase their
-                  homes.
-                </h3>
-                <span className="gray-line" />
-              </Col>
+                  <h3>
+                    All proceeds from Zeehaus coins sold are held and
+                    distributed by the Zeehaus Organization to help homebuyers
+                    purchase their homes.
+                  </h3>
+                  <span className="gray-line" />
+                </Col>
+              </Row>
+
               <Row>
                 <Col
                   xs={12}
@@ -71,6 +82,7 @@ export default function ThirdSection() {
                   style={{ padding: 0, paddingTop: "2rem" }}
                 >
                   <div className="org-card-vert">
+                    <SectionLogo justCoin asBack />
                     <div>
                       <h1>Zeehaus Coin (“ZEH”)</h1>
                       <p>
@@ -201,6 +213,7 @@ export default function ThirdSection() {
                   style={{ padding: 0, paddingTop: "2rem" }}
                 >
                   <div className="org-card-vert">
+                    <SectionLogo justCoin asBack />
                     <div>
                       <h1>Homeownership</h1>
                       <p>
@@ -299,6 +312,7 @@ export default function ThirdSection() {
                   style={{ padding: 0, paddingTop: "2rem" }}
                 >
                   <div className="org-card-vert">
+                    <SectionLogo justCoin asBack />
                     <div>
                       <h1>Equity Sharing Benefits</h1>
                       <p>
@@ -381,6 +395,7 @@ export default function ThirdSection() {
                   style={{ padding: 0, paddingTop: "2rem" }}
                 >
                   <div className="org-card-vert">
+                    <SectionLogo justCoin asBack />
                     <div>
                       <h1>Buying Fractional Rental Properties</h1>
                       <p>
@@ -481,7 +496,7 @@ export default function ThirdSection() {
                 onLoad={() => setIframeLoaded(true)}
                 scrolling="no"
                 src={
-                  false
+                  showLocal
                     ? "http://localhost:3000/coin/zeehausorg"
                     : "https://zeehaus.com/coin/zeehausorg"
                 }
@@ -491,7 +506,6 @@ export default function ThirdSection() {
               <br />
               <h1 className="center">Use ZEH to Purchase Properties</h1>
               <br />
-              <span className="gray-line" />
               <br />
               <br />
               {!iframeLoaded && <h3>Just a moment...</h3>}
@@ -505,7 +519,7 @@ export default function ThirdSection() {
                 width="100%"
                 scrolling="no"
                 src={
-                  false
+                  showLocal
                     ? "http://localhost:3000/org/coin_property_purchase"
                     : "https://zeehaus.com/org/coin_property_purchase"
                 }
@@ -622,7 +636,7 @@ export default function ThirdSection() {
               width="100%"
               scrolling="no"
               src={
-                false
+                showLocal
                   ? "http://localhost:3000/coin/dialog_one"
                   : "https://zeehaus.com/coin/dialog_one"
               }
@@ -640,7 +654,7 @@ export default function ThirdSection() {
               width="100%"
               scrolling="no"
               src={
-                false
+                showLocal
                   ? "http://localhost:3000/coin/dialog_two"
                   : "https://zeehaus.com/coin/dialog_two"
               }
@@ -658,7 +672,7 @@ export default function ThirdSection() {
               width="100%"
               scrolling="no"
               src={
-                false
+                showLocal
                   ? "http://localhost:3000/coin/dialog_three"
                   : "https://zeehaus.com/coin/dialog_three"
               }
@@ -676,7 +690,7 @@ export default function ThirdSection() {
               width="100%"
               scrolling="no"
               src={
-                false
+                showLocal
                   ? "http://localhost:3000/coin/dialog_four"
                   : "https://zeehaus.com/coin/dialog_four"
               }

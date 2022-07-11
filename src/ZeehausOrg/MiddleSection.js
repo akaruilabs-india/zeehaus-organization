@@ -36,7 +36,7 @@ export default function MiddleSection () {
                         homeownership.
                       </p>
                     </div>
-                    <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+                    <img src="https://pinta-digital.s3.us-west-2.amazonaws.com/production/zeehaus_org_images/4.jpg" />
                   </div>
                 </Col>
                 <Col
@@ -55,7 +55,7 @@ export default function MiddleSection () {
                         real estate.
                       </p>
                     </div>
-                    <img src="https://images.pexels.com/photos/4792503/pexels-photo-4792503.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+                    <img src="https://pinta-digital.s3.us-west-2.amazonaws.com/production/zeehaus_org_images/5.jpg" />
                   </div>
                 </Col>
                 <Col
@@ -81,7 +81,7 @@ export default function MiddleSection () {
                     </div>
                     <img
                       alt="s"
-                      src="https://images.pexels.com/photos/7172858/pexels-photo-7172858.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                      src="https://pinta-digital.s3.us-west-2.amazonaws.com/production/zeehaus_org_images/6.jpg"
                     />
                   </div>
                 </Col>
@@ -98,13 +98,19 @@ export default function MiddleSection () {
                       <p>
                         Instead of buying full property or nothing at all, there
                         is a better way: Own a portion and{" "}
-                        <a href="https://zeehaus.com/common/equity_sharing" rel='noopener noreferrer' target={'_blank'}>share equity</a> &
-                        expenses
+                        <a
+                          href="https://zeehaus.com/common/equity_sharing"
+                          rel="noopener noreferrer"
+                          target={"_blank"}
+                        >
+                          share equity
+                        </a>{" "}
+                        & expenses
                       </p>
                     </div>
                     <img
                       alt="s"
-                      src="https://images.pexels.com/photos/4670707/pexels-photo-4670707.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                      src="https://pinta-digital.s3.us-west-2.amazonaws.com/production/zeehaus_org_images/3.jpg"
                     />
                   </div>
                 </Col>

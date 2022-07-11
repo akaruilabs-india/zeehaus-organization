@@ -1,8 +1,21 @@
 import React from 'react'
-import NewCoin from './../logoWithCoin.png'
+import Text from './../Icon.png'
+import Coin from "./../coin.png";
 
-export default function SectionLogo() {
+export default function SectionLogo({ justCoin, asBack }) {
   return (
-    <div><img src={NewCoin} width='350px' alt='2'/></div>
-  )
+    <div>
+      {justCoin && (
+        <img
+          className={asBack ? "coin-back" : ""}
+          src={Coin}
+          width="150px"
+          alt="2"
+        />
+      )}
+      {!justCoin && <br />}
+      {!justCoin && <img src={Text} width="350px" alt="2" />}
+    </div>
+  );
 }
+
